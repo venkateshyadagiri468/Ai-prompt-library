@@ -1,6 +1,9 @@
 import { useState, useMemo } from 'react';
 import { Prompt, CategoryType } from '@/types/prompt';
 
+/**
+ * Custom hook providing memoized O(N) multi-criteria filtering across prompts
+ */
 export function usePromptFilter(allPrompts: Prompt[], favoriteIds: Set<string>) {
   const [searchQuery, setSearchQuery] = useState('');
   const [category, setCategory] = useState<CategoryType>('All');
