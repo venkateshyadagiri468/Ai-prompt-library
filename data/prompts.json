@@ -1,0 +1,134 @@
+[
+  {
+    "id": "prompt-1",
+    "title": "Senior Code Reviewer & Security Auditor",
+    "description": "Thoroughly review code snippets for edge-case vulnerabilities, performance bottlenecks, and adherence to clean architecture principles.",
+    "category": "Coding",
+    "tags": ["Refactoring", "Security", "Code Review", "Clean Code"],
+    "prompt": "You are a Senior Principal Software Architect and Cybersecurity Specialist. Review the following code snippet carefully:\n\n```[Language]\n[Code Snippet]\n```\n\nProvide a structured breakdown including:\n1. 🚨 **Security Vulnerabilities**: Identify any OWASP Top 10 risks or memory leaks.\n2. ⚡ **Performance Optimizations**: Suggest algorithmic improvements or reduced complexity.\n3. 🧼 **Clean Code Refactor**: Provide a refactored version adhering to SOLID principles.\n4. 🧪 **Edge Case Test Scenarios**: List unit test cases to prevent regressions.",
+    "favorite": true,
+    "complexity": "Advanced",
+    "copies": 342
+  },
+  {
+    "id": "prompt-2",
+    "title": "High-Converting SaaS Landing Page Copy",
+    "description": "Craft persuasive hero section copy, feature grids, and call-to-action hooks using the PAS (Problem-Agitate-Solve) framework.",
+    "category": "Writing",
+    "tags": ["Copywriting", "SaaS", "Conversion", "PAS Framework"],
+    "prompt": "You are a World-Class SaaS Copywriter trained by Ogilvy. Write high-converting landing page copy for our product:\n\n- **Product Name**: [Product Name]\n- **Target Audience**: [Target Audience]\n- **Primary Value Proposition**: [Primary Value Prop]\n\nGenerate:\n- 3 Punchy Hero Headlines + Subheadlines\n- Problem, Agitation, and Solution copy blocks\n- 4 Core Feature Bullet Points with outcome-driven hooks\n- High-intent Call To Action button labels and subtext.",
+    "favorite": false,
+    "complexity": "Intermediate",
+    "copies": 289
+  },
+  {
+    "id": "prompt-3",
+    "title": "Viral LinkedIn Thought Leadership Generator",
+    "description": "Transform technical concepts or industry milestones into engaging, formatted LinkedIn posts with high comment bait hooks.",
+    "category": "Marketing",
+    "tags": ["Social Media", "LinkedIn", "Content Strategy", "Viral"],
+    "prompt": "Act as an elite LinkedIn Content Strategist who has grown accounts to 100k+ followers.\n\nTopic / Story: [Story or Key Insight]\nTarget Audience: [Audience, e.g., Developers, Founders]\n\nWrite a LinkedIn post using this formula:\n1. **Hook**: Short 1-line controversial or pattern-interrupting hook.\n2. **Context**: The struggle or unexpected baseline scenario.\n3. **Core Lesson**: 3-5 short, punchy bullet points with line breaks.\n4. **Takeaway**: Summarize the paradigm shift in 1 sentence.\n5. **CTA Question**: Ask an open-ended engagement question.",
+    "favorite": true,
+    "complexity": "Beginner",
+    "copies": 512
+  },
+  {
+    "id": "prompt-4",
+    "title": "Feynman Concept Breakdown Engine",
+    "description": "Explain complex technical or scientific ideas to anyone using simple analogies, visual diagrams, and intuitive mental models.",
+    "category": "Learning",
+    "tags": ["Feynman Technique", "Education", "Mental Models", "Simplification"],
+    "prompt": "Explain [Complex Topic] using the Feynman Technique.\n\nFollow these guidelines:\n1. Pretend you are explaining this to a curious 12-year-old.\n2. Use a relatable real-world analogy (e.g., traffic system, cooking recipe, or sports).\n3. Avoid jargon, or define necessary technical terms immediately with everyday words.\n4. Include a ASCII diagram or bullet visual illustrating the core mechanism.\n5. End with 3 self-check quiz questions to test understanding.",
+    "favorite": false,
+    "complexity": "Beginner",
+    "copies": 198
+  },
+  {
+    "id": "prompt-5",
+    "title": "SQL Query Optimization & Indexing Advisor",
+    "description": "Optimize slow database queries, suggest missing indexes, and prevent costly full table scans.",
+    "category": "Coding",
+    "tags": ["SQL", "Database", "Performance", "PostgreSQL"],
+    "prompt": "You are a Principal Database Administrator specializing in PostgreSQL/MySQL query tuning.\n\nHere is my slow SQL query and schema context:\n```sql\n[SQL Query]\n```\n\nDatabase Engine: [PostgreSQL / MySQL / SQLite]\nEstimated Table Size: [Number of rows, e.g. 5 Million]\n\nProvide:\n1. **Query Execution Plan Analysis**: Identify bottlenecks like sequential scans or temporary files.\n2. **Optimized SQL Query**: Write the rewritten query.\n3. **Recommended Index Definitions**: Precise `CREATE INDEX` statements with composite index ordering tips.\n4. **Database Config Tweaks**: Memory/work_mem or indexing strategies.",
+    "favorite": true,
+    "complexity": "Advanced",
+    "copies": 410
+  },
+  {
+    "id": "prompt-6",
+    "title": "Product Requirement Document (PRD) Specialist",
+    "description": "Generate comprehensive PRDs with user stories, acceptance criteria, technical dependencies, and metrics.",
+    "category": "Productivity",
+    "tags": ["Product Management", "PRD", "Agile", "User Stories"],
+    "prompt": "You are a Principal Product Manager at a Fortune 50 tech firm. Write a comprehensive PRD for [Feature Name].\n\nStructure the PRD as follows:\n- **Overview & Problem Statement**: Why are we building this now?\n- **Target Personas & Use Cases**: Who benefits and how?\n- **In-Scope vs Out-of-Scope Requirements**: Clear boundaries.\n- **User Stories & Acceptance Criteria**: Standard Gherkin format (Given/When/Then).\n- **Key Performance Metrics (KPIs)**: Success criteria & tracking telemetry.\n- **Edge Cases & Security Considerations**.",
+    "favorite": false,
+    "complexity": "Intermediate",
+    "copies": 175
+  },
+  {
+    "id": "prompt-7",
+    "title": "B2B Cold Email Outreach Sequence",
+    "description": "Write personalized 3-step cold email outreach sequence with high open rates and friction-free reply hooks.",
+    "category": "Business",
+    "tags": ["Outreach", "Sales", "Cold Email", "B2B"],
+    "prompt": "You are an expert B2B Sales Development Director. Create a 3-step cold email sequence targeting [Job Title, e.g., CTOs] at [Industry, e.g., Fintech Companies].\n\nValue Proposition: [Brief Value Proposition]\n\nDraft:\n- **Email 1 (Initial Hook)**: <120 words, personalized hook, value drop, low-friction CTA (e.g. 'Open to checking a 2-min loom?').\n- **Email 2 (Value Add Follow-up)**: 3 days later, share a case study statistic or industry insight.\n- **Email 3 (Break-up / Final Nudge)**: 7 days later, polite closeout keeping the door open.",
+    "favorite": false,
+    "complexity": "Intermediate",
+    "copies": 230
+  },
+  {
+    "id": "prompt-8",
+    "title": "Photorealistic Midjourney V6 Prompt Builder",
+    "description": "Generate hyper-detailed camera, lighting, composition, and style directives for state-of-the-art AI image generation.",
+    "category": "Creative",
+    "tags": ["Midjourney", "AI Art", "Prompt Engineering", "Photography"],
+    "prompt": "You are an award-winning Commercial Photographer and Visual Prompt Engineer. Expand this core concept into 3 detailed Midjourney v6 prompts:\n\nConcept: [Image Idea, e.g., Futuristic cyberpunk cafe in rainy Tokyo]\n\nInclude in each prompt:\n- **Subject & Action Details**\n- **Camera Specs**: lens focal length (e.g. 85mm f/1.4), camera body (Hasselblad H6D-100c)\n- **Lighting**: volumetrics, cinematic rim lighting, golden hour, neon reflections\n- **Styling**: color palette, render engines (Octane Render, Unreal Engine 5 details)\n- **Midjourney Parameters**: `--ar 16:9 --style raw --v 6.0 --stylize 250`",
+    "favorite": true,
+    "complexity": "Intermediate",
+    "copies": 640
+  },
+  {
+    "id": "prompt-9",
+    "title": "TypeScript API Client Generator (Zod + Fetch)",
+    "description": "Generate type-safe API client wrappers complete with Zod runtime validation, retry logic, and error handling.",
+    "category": "Coding",
+    "tags": ["TypeScript", "Zod", "API", "Type Safety"],
+    "prompt": "Act as a Senior Frontend Systems Engineer. Generate a fully typed API client for the following endpoint specification:\n\nAPI Endpoint Description / JSON response schema:\n[Endpoint Details or Sample JSON]\n\nRequirements:\n1. Define Zod schema for response validation.\n2. Infer TypeScript types from Zod.\n3. Create an async function using standard `fetch` with robust error handling and exponential backoff retry.\n4. Export clean custom error types for HTTP status codes.",
+    "favorite": false,
+    "complexity": "Intermediate",
+    "copies": 310
+  },
+  {
+    "id": "prompt-10",
+    "title": "Executive Summary & Key Takeaways Extractor",
+    "description": "Condense long articles, meeting transcripts, or research papers into executive bullet points and action items.",
+    "category": "Productivity",
+    "tags": ["Summarizer", "Executive", "Notes", "Synthesis"],
+    "prompt": "Read the following document text:\n\n```text\n[Paste Long Text / Transcript Here]\n```\n\nProvide an Executive Briefing:\n1. **TL;DR (1 Sentence)**: The fundamental takeaway.\n2. **Key Decisions & Findings**: 3-5 structured bullet points.\n3. **Action Items & Owners**: Who needs to do what by when?\n4. **Potential Risks & Open Questions**: Highlight unresolved blockers.",
+    "favorite": true,
+    "complexity": "Beginner",
+    "copies": 480
+  },
+  {
+    "id": "prompt-11",
+    "title": "Pitch Deck Storyboard & Investor Script",
+    "description": "Structure a 10-slide startup pitch deck complete with slide titles, visual descriptions, and spoken founder script.",
+    "category": "Business",
+    "tags": ["Startups", "Pitch Deck", "Fundraising", "Venture Capital"],
+    "prompt": "You are a Venture Capital Partner and Startup Elevator Pitch Coach. Create a 10-slide pitch deck structure for our startup:\n\nStartup Name: [Startup Name]\nCore Innovation: [What you do]\nTarget Market: [TAM / Market]\n\nFor each slide (1. Problem, 2. Solution, 3. Market Size, 4. Product, 5. Business Model, 6. Traction, 7. Go-To-Market, 8. Competition, 9. Team, 10. The Ask):\n- **Slide Headline**\n- **Visual Element Recommendation** (charts, mockups, diagrams)\n- **Founder Script (30 seconds per slide)**",
+    "favorite": false,
+    "complexity": "Advanced",
+    "copies": 215
+  },
+  {
+    "id": "prompt-12",
+    "title": "Interactive Socratic Tutor",
+    "description": "Learn any subject through guided questions without being given direct answers immediately, fostering deep retention.",
+    "category": "Learning",
+    "tags": ["Socratic Method", "Tutor", "Active Learning", "Education"],
+    "prompt": "Act as a Socratic Professor. I want to learn about [Subject, e.g. Quantum Computing / Microservices Architecture].\n\nRules:\n1. Do NOT explain the subject in one giant lecture block.\n2. Ask me ONE foundational question at a time to test my intuition.\n3. Based on my response, guide me with gentle hints, counter-examples, or follow-up questions.\n4. Celebrate correct reasoning and gently correct misconceptions.",
+    "favorite": false,
+    "complexity": "Beginner",
+    "copies": 160
+  }
+]
