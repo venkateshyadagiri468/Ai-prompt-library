@@ -16,29 +16,30 @@ While lightweight for initial deployment, its codebase is engineered according t
 
 ```mermaid
 graph TD
-    Client[Browser Client] --> Router[Next.js 15 App Router]
+    Client["Browser Client"] --> Router["Next.js 15 App Router"]
     
-    subgraph Core UI Layer
-        Router --> Layout[Root Layout & ThemeProvider]
-        Layout --> Page[Home Feature Page]
-        Page --> Navbar[Navbar & Quick Stats]
-        Page --> Hero[Hero Section]
-        Page --> SearchBar[Command SearchBar]
-        Page --> CategoryFilter[Category Filter Bar]
-        Page --> Grid[Prompt Grid & Cards]
-        Page --> Modals[Detail & Custom Creation Modals]
+    subgraph CoreUILayer ["Core UI Layer"]
+        Router --> Layout["Root Layout & ThemeProvider"]
+        Layout --> Page["Home Feature Page"]
+        Page --> Navbar["Navbar & Quick Stats"]
+        Page --> Hero["Hero Section"]
+        Page --> SearchBar["Command SearchBar"]
+        Page --> CategoryFilter["Category Filter Bar"]
+        Page --> Grid["Prompt Grid & Cards"]
+        Page --> Modals["Detail & Custom Creation Modals"]
     end
 
-    subgraph State & Pipeline Layer
-        SearchBar & CategoryFilter --> FilterHook[usePromptFilter Engine]
-        FilterHook --> Memo[useMemo Memoized Pipeline]
-        Grid --> FavoriteHook[useFavorites Sync Storage]
-        Grid --> ClipboardHook[useClipboard + Confetti]
+    subgraph StateLayer ["State & Pipeline Layer"]
+        SearchBar --> FilterHook["usePromptFilter Engine"]
+        CategoryFilter --> FilterHook
+        FilterHook --> Memo["useMemo Memoized Pipeline"]
+        Grid --> FavoriteHook["useFavorites Sync Storage"]
+        Grid --> ClipboardHook["useClipboard + Confetti"]
     end
 
-    subgraph Persistence Layer
-        Memo --> DataStore[Prompts Dataset - JSON + LocalStorage]
-        FavoriteHook --> LocalStorage[(Browser LocalStorage)]
+    subgraph PersistenceLayer ["Persistence Layer"]
+        Memo --> DataStore["Prompts Dataset - JSON + LocalStorage"]
+        FavoriteHook --> LocalStorage[("Browser LocalStorage")]
     end
 ```
 
@@ -211,26 +212,26 @@ npm run build
 
 ```mermaid
 graph LR
-    subgraph V1 MVP (Current)
-        LocalJSON[Local JSON Dataset]
-        LocalStorage[Browser Storage]
-        HooksState[React Hooks]
+    subgraph Phase1 ["V1 MVP (Current)"]
+        LocalJSON["Local JSON Dataset"]
+        LocalStorage["Browser Storage"]
+        HooksState["React Hooks"]
     end
 
-    subgraph V2 SaaS Expansion
-        Auth[Clerk / NextAuth]
-        Database[(PostgreSQL + Prisma)]
-        API[Next.js API Routes]
+    subgraph Phase2 ["V2 SaaS Expansion"]
+        Auth["Clerk / NextAuth"]
+        Database[("PostgreSQL + Prisma")]
+        API["Next.js API Routes"]
     end
 
-    subgraph V3 AI Intelligence
-        VectorDB[(Pinecone Vector Search)]
-        Embeddings[Semantic Prompt Search]
-        AI Eval[LLM Auto-Prompt Refiner]
+    subgraph Phase3 ["V3 AI Intelligence"]
+        VectorDB[("Pinecone Vector Search")]
+        Embeddings["Semantic Prompt Search"]
+        AIEval["LLM Auto-Prompt Refiner"]
     end
 
-    V1 MVP --> V2 SaaS Expansion
-    V2 SaaS Expansion --> V3 AI Intelligence
+    Phase1 --> Phase2
+    Phase2 --> Phase3
 ```
 
 - **Phase 2 (Backend Integration)**: Migrate from `localStorage` to **PostgreSQL + Prisma ORM**, implement **OAuth User Authentication** (Clerk), and add custom prompt collection sharing.
