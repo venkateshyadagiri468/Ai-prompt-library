@@ -1,5 +1,12 @@
 # ⚡ AI Prompt Vault — System Architecture & Documentation
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://ai-prompt-library-olive.vercel.app/)
+[![Next.js 15](https://img.shields.io/badge/Next.js%2015-000000?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![TypeScript 5](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+
+> 🚀 **Live Production App**: [https://ai-prompt-library-olive.vercel.app/](https://ai-prompt-library-olive.vercel.app/)
+
 > **A high-performance, modular Prompt Engineering Management Application engineered with Next.js 15 (App Router), TypeScript, Tailwind CSS, Framer Motion, and Client-Side State Optimizations.**
 
 ---
@@ -9,6 +16,8 @@
 **AI Prompt Vault** is an enterprise-grade prompt management system designed to streamline the storage, discovery, parameterization, and deployment of production AI system prompts across Large Language Models (ChatGPT, Claude 3.5, DeepSeek R1).
 
 While lightweight for initial deployment, its codebase is engineered according to **Modular Software Architecture Principles**—demarcating UI primitives, domain taxonomy, state hooks, and client-side storage abstractions to ensure seamless scalability into a full-stack SaaS platform.
+
+- 🔗 **Live Demo**: [https://ai-prompt-library-olive.vercel.app/](https://ai-prompt-library-olive.vercel.app/)
 
 ---
 
@@ -74,6 +83,7 @@ sequenceDiagram
 
 | Layer | Technology | Selection Rationale |
 | :--- | :--- | :--- |
+| **Live App** | **[Vercel Deployment](https://ai-prompt-library-olive.vercel.app/)** | Globally distributed edge CDN hosting with instant Turbopack deployments. |
 | **Framework** | **Next.js 15 (App Router)** | Leverages React Server Component boundaries, route segment optimization, and zero-bundle server layouts. |
 | **Language** | **TypeScript 5.x** | Enforces strict end-to-end type safety (`Prompt`, `CategoryType`, `FilterState`), preventing runtime null reference errors. |
 | **Styling** | **Tailwind CSS v4** | Provides utility-first, responsive atomic CSS with dark mode class strategy (`.dark`) and zero runtime style overhead. |
@@ -166,16 +176,16 @@ To eliminate React 19 SSR hydration mismatch warnings, the `ThemeToggle` compone
 
 ## 🚀 Getting Started & Local Setup
 
-### Prerequisites
-- **Node.js**: `v18.17.0` or higher
-- **npm**: `v9.x` or higher
+### Live Production Deployment
+Experience the live application without local setup:
+👉 **[https://ai-prompt-library-olive.vercel.app/](https://ai-prompt-library-olive.vercel.app/)**
 
-### Installation
+### Local Installation
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/ai-prompt-vault.git
-   cd ai-prompt-vault
+   git clone https://github.com/venkateshyadagiri468/Ai-prompt-library.git
+   cd Ai-prompt-library
    ```
 
 2. **Install Dependencies**:
@@ -197,7 +207,7 @@ The repository includes strict static analysis scripts:
 
 ```bash
 # Execute TypeScript Compiler checks without output generation
-npx tsc --noEmit
+npm run typecheck
 
 # Run ESLint for code formatting and React best practices
 npm run lint
